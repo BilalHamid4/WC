@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: white;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+    flex-direction: column;
+  }
+
+  .navLinks.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
